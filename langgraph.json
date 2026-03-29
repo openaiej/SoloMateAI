@@ -5,6 +5,6 @@
     ],
     "env": "./.env",
     "graphs": {
-        "mr_poet": "./main.py:graph"
+        "mr_poet": "./main.py:graph_llm"
     }
 }

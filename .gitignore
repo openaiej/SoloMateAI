@@ -1,3 +1,6 @@
+# Local LangGraph SQLite checkpoint
+solomate_memory.db
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -134,7 +137,7 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
-# Environments
+# Environments sd
 .env
 .envrc
 .venv
