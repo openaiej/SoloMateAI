@@ -295,7 +295,6 @@ def build_solomate_llm_graph(checkpointer: SqliteSaver | None = None):
     g.add_edge("analyze_progression", "chatbot")
     g.add_conditional_edges("chatbot", tools_condition)
     g.add_edge("tools", "chatbot")
-
     return g.compile(checkpointer=checkpointer)
 
 
@@ -305,7 +304,7 @@ def _default_checkpointer() -> SqliteSaver:
 
 
 graph_llm = build_solomate_llm_graph(checkpointer=_default_checkpointer())
-
+print(graph_llm.get_graph().draw_ascii())
 
 def _print_messages(values: dict | None) -> None:
     if not isinstance(values, dict):
